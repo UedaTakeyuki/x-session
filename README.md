@@ -1,8 +1,8 @@
 # x-session
-Run RPi Desktop environment on Mac (or others) through X11 forwarding.
+Run RPi Desktop environment on Mac (or other Hosts) through X11 forwarding.
 
 ## How does this work
-The RPi desktop, which is connected from a Mac (or others like Windows, Linux, etc.), is merged on the Mac (or others) as follows:
+The RPi desktop, which is connected from a Mac (or other Hosts like Windows, Linux, etc.), is merged on the Mac (or others) as follows:
 ![](pics/HowRPiDesktopMergedOnMac.jpg)
 
 ## How to install
@@ -13,7 +13,7 @@ The RPi desktop, which is connected from a Mac (or others like Windows, Linux, e
 Then, the ***x-session*** is symbolic-linked to /usr/local/bin.
 
 ## How to use
-1. Open Terminal app on Mac (or others).
+1. Open the Terminal app on Mac (or other Hosts).
 2. Connect to a RPi by ```ssh``` with ***-Y*** option like as follow:
 ```
 ssh -Y pi@raspberrypi.local
@@ -27,7 +27,14 @@ pi@raspberrypi:~ $ x-session
 ** Message: 11:11:58.971: main.vala:134: log path: /home/pi/.cache/lxsession/LXDE-pi/run.log
 ```
 
-Note: ***-Y*** option for ```ssh``` command means that "```Enables trusted X11 forwarding.  Trusted X11 forwardings are not subjected to the X11 SECURITY extension con‐
-             trols.```".
+Note: ***-Y*** option for ```ssh``` command means that "```Enables trusted X11 forwarding.```".
+
+## Requirement
+- X11 is running on both an RPi and (Mac or other Hosts)
+  - RPi: By default X11 is running except for ***Waylang*** is selected.
+  - Mac: X11 available with [XQuartz](https://www.xquartz.org/)
+  - Windows: Sorry I'm not familiar with Windows because I don't use Windows after Windows 7. At Windows 7, X11 was able to run with Cygnus but I'm not sure about recent Windows.
+  - Linux: By default X11 is running except for ***Waylang*** is selected.
+
 ## History
 - 2024.06.15 Created from scratch

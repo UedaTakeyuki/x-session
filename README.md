@@ -26,5 +26,8 @@ pi@raspberrypi:~ $ x-session
 ** Message: 11:11:58.970: main.vala:133: log directory: /home/pi/.cache/lxsession/LXDE-pi
 ** Message: 11:11:58.971: main.vala:134: log path: /home/pi/.cache/lxsession/LXDE-pi/run.log
 ```
+
+Note: ***-Y*** option for ```ssh``` command means that "```Enables trusted X11 forwarding.  Trusted X11 forwardings are not subjected to the X11 SECURITY extension con‐
+             trols.```".
 ## History
 - 2024.06.15 Created from scratch

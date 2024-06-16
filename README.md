@@ -31,7 +31,8 @@ Note: ***-Y*** option for ```ssh``` command means that "```Enables trusted X11 f
 
 ## Requirement
 - X11 is running on both an RPi and (Mac or other Hosts)
-  - RPi: By default X11 is running except for ***Waylang*** is selected.
+  - RPi:
+    By default X11 is running except for ***Waylang*** is selected.
   - Mac: X11 available with [XQuartz](https://www.xquartz.org/)
   - Windows: Sorry I'm not familiar with Windows because I don't use Windows after Windows 7 due to my anger at the continuous meaningless changes. In my memory about 
  Windows 7, the X11 was available with Cygnus but I'm not sure about recent Windows.
